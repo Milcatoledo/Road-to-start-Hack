@@ -75,6 +75,9 @@ nav a:hover {
 .ul2{
     list-style: none;
 }
+.center{
+    justify-items: center;
+}
 .hero2 {
     display: flex;
     justify-content: space-between;
@@ -149,10 +152,6 @@ footer {
         gap: 10px;
     }
 }
-
-
-
-
 /* Estilos para la tabla */
 table {
     width: 90%;
