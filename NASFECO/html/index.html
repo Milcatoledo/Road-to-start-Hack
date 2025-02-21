@@ -23,6 +23,14 @@
         <a href="https://wa.me/" class="whatsapp-icon"><img src="/NASFECO/static/icons/redes-sociales/whatsapp.png" alt="WhatsApp"></a>
     </header>
 
+    <!-- Sección de introducción con imagen de fondo y título -->
+    <section class="intro">
+        <div class="intro-overlay">
+            <img src="/NASFECO/static/icons/Agua.avif" alt="Agua Potable">
+            <h1>Purificación de agua eco-amigable</h1>
+        </div>
+    </section>
+    
     <section class="hero">
         <div class="hero-text">
             <h2>Sistema Modular de Filtrado de Agua Comunitario</h2>
@@ -38,4 +46,13 @@
         <p>&copy; 2025 NASFECO S.A. Todos los derechos reservados.</p>
     </footer>
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+        let scrollY = window.scrollY; 
+        let title = document.querySelector(".intro-overlay h1");
+        title.style.transform = `translate(-50%, calc(-50% + ${scrollY * 0.5}px))`; 
+        title.style.opacity = `${1 - scrollY / 500}`; // Evita que se esconda
+    });
+</script>
+
 </html>
